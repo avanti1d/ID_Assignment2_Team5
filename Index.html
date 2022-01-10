@@ -1,1 +1,41 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style></style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+         <li class="logo">Electron</li>
+          <div class="items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Login</a></li>
+          </div>
+        </ul>
+
+        <li class="search-icon">
+            <input type="search" placeholder="Search">
+            <label class="icon">
+                <span class="fas fa-search"></span>
+            </label>
+        </li>
+
+    </nav>
+</body>
+
+</html>
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
