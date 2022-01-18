@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <!-- Nav Bar -->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -27,28 +28,50 @@
             <li><a href="#">Feedback</a></li>
             <li><a href="#">Sign In</a></li>
         </ul>
-      </nav>
-      <section>
-          <div class="backgroundsales">
-            <img class="" src="Images/BackgroundSales.png" alt="Background">
-          </div>
-          <div class="sales">
-              <h1>
-                Marshall Earbuds</h1>
-              <h4>Wireless<br>
-                Lightweight</h4>
+    </nav>
 
-          </div>
-      </section>
+    <!-- SlideShow (sales) -->
+    <div class="slideshow-container">
       
-      <div class="categories" id="items-categories">
+        <div class="mySlides fade">
+          <div class="slidesimg"><img src="Images/BackgroundSales1.png"></div>
+          <div class="salestext">Marshall Earbud A.N.C.</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="slidesimg"><img src="Images/BackgroundSales2.png"></div>
+          <div class="salestext">True Wireless</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="slidesimg"><img src="Images/BackgroundSales3.png"></div>
+          <div class="salestext">Noise Cancellation</div>
+        </div>
+  
+        <div class="mySlides fade">
+  
+          <div class="slidesimg"><img src="Images/BackgroundSales4.png"></div>
+          <div class="salestext">Total 20 Hours</div>
+        </div>
+        
+    </div>
+        
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+
+    <!-- Categories -->
+    <div class="categories" id="items-categories">
         <li><a class="active" href="#">Electronics</a></li>
         <li><a href="#">Home & Living</a></li>
         <li><a href="#">Bags</a></li>
         <li><a href="#">Sports & OutDoor</a></li>
-      </div>
+    </div>
 
-
+    <!-- Sub-Categories -->
     <div class="subcategories-grid" id="list-product">
         <div class="item-here">
             <a href="#">
@@ -107,12 +130,13 @@
         </div>
     </div>
 
-
+    <!-- Footer -->
     <div class="footer">
         <h4>Avanti & Hwee Min<br><br><br>
         2022 Janaury 31</h4>
     </div>
-
+    
+    <script src=script.js></script>
 </body>
 
 </html>
