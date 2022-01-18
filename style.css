@@ -110,7 +110,7 @@
   .slideshow-container {
     width: 100%;
     height: 90vh;
-    background-color:lightslategray;
+    background-color:#f4f4f4;
   }
   
   .slidesimg{
@@ -231,7 +231,7 @@ a.active,a:hover{
     text-align: center;
     justify-content: center;
     display: flex;
-    background-color: gray;
+    background-color: #f4f4f4;
     margin: 10px;
 
     text-transform: uppercase;
@@ -285,15 +285,11 @@ a.active,a:hover{
   @import url('https://fonts.googleapis.com/css?family=Monoton');
 
 
-  body {
-    width: 100%;
-    height: 100%;
-    font-family: "Monoton", Helvetica, sans-serif;
-    background: #f4f4f4;
-    letter-spacing: 5px;
-  }
+
   
   h1 {
+    font-family: "Monoton", Helvetica, sans-serif;
+    letter-spacing: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
