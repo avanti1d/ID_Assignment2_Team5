@@ -208,7 +208,7 @@ a.active,a:hover{
 /* Sub-Categories */
 
 .item-here img {
-    width: 80%;
+    width: 85%;
     height: auto;
     object-fit: contain;
   }
@@ -227,7 +227,6 @@ a.active,a:hover{
     width: 300px;
     padding: 10px;
     height: 300px;
-    box-sizing: border-box;
     text-align: center;
     justify-content: center;
     display: flex;
@@ -237,9 +236,13 @@ a.active,a:hover{
     text-transform: uppercase;
     
   }
+
+  .item-here:hover{
+    background-color: #e4e1e1;
+  }
   
 .subcategories-grid {
-    max-width: 1200px;
+    max-width: 1300px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -251,8 +254,7 @@ a.active,a:hover{
   .footer {
     width:100%;
     bottom: 0;
-    margin-top: 100px;
-    margin-right: 35px;
+    margin-top: 200px;
     background-color: white;
     color: rgb(59, 56, 56);
     height:150px;
@@ -271,7 +273,7 @@ a.active,a:hover{
  section{
     background: no-repeat;
     background-color: #f4f4f4;
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -285,17 +287,15 @@ a.active,a:hover{
   @import url('https://fonts.googleapis.com/css?family=Monoton');
 
 
-
-  
   h1 {
     font-family: "Monoton", Helvetica, sans-serif;
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: inline;
-    font-size: 70px;
+    font-size: 100px;
     text-transform: uppercase;
+    font-weight: bolder;
     
     @media (min-width: 700px) {
       font-size: 9vw;
@@ -313,5 +313,42 @@ a.active,a:hover{
           -webkit-background-clip: text;
       }
   }
+  /* About-text (Electron) */
 
+  .about-text{
+    font-size: 15px;
+    text-align: center;
+    font-family:unset;
+  }
+  
+  .faq-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
 
+  .faq-header{
+    padding:60px;
+    color: #f4f4f4;
+    text-shadow: 2px 2px 4px gray;
+    font-size: 80px;
+  }
+
+  .faq-textbox{
+    margin-left:50px;
+    
+  }
+
+  .faq-text{
+    border-radius: 25px;
+    margin-left:auto;
+    order:2;
+    font-size: 17px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left:250px;
+    padding-right:250px;
+    background-color: #f4f4f4;
+    margin: 20px;
+  }
