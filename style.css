@@ -59,6 +59,7 @@
   }
   #check{
     display: none;
+    
   }
   @media (max-width: 952px){
     label.logo{
@@ -82,6 +83,7 @@
       left: -100%;
       text-align: center;
       transition: all .5s;
+      visibility: visible; z-index: 100;
     }
     nav ul li{
       display: block;
