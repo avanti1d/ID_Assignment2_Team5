@@ -354,3 +354,38 @@ a.active,a:hover{
     background-color: #f4f4f4;
     margin: 20px;
   }
+
+/* phone cases */
+.product-here img {
+  width: 85%;
+  height: auto;
+  object-fit: contain;
+}
+
+.product-here {
+  width: 300px;
+  padding: 10px;
+  height: 300px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  background-color: #f4f4f4;
+  margin: 10px;
+
+  text-transform: uppercase;
+  
+}
+
+.product-here:hover{
+  background-color: #e4e1e1;
+}
+
+.caseitems-grid {
+  max-width: 1300px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
