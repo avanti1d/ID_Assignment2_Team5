@@ -19,7 +19,7 @@
         <label class="logo">Electron</label>
         <ul>
             <li><input type="image" src="Images/Shoppingcart.png" width="35px" height="35px" name="shopcart" 
-                class="cart-btn" id="cartimg" data-toggle="modal" data-target="#cart"><span class="total-count"></span>
+                class="btn btn-primary" id="cartimg" data-toggle="modal" data-target="#cart"><span class="total-count"></span>
             </li>
             <li><a class="#" href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Index.html">Home</a></li>
             <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Services.html">Services</a></li>
@@ -35,7 +35,7 @@
                 <img class="" src="Images/PhoneCase.png" alt="iphone phonecase">
                 <h4 class="card-title">Iphone 13</h4>
                 <p class="card-text">Price: $2.00</p>
-                <a href="#" data-name="iphone13" data-price="2.0" class="add-to-cart cart-btn">Add to cart</a>
+                <a href="#" data-name="iphone13" data-price="2.0" class="add-to-cart btn btn-primary">Add to cart</a>
             </div>
         </div> 
         
@@ -44,12 +44,20 @@
                 <img class="" src="Images/s21 case.png" alt="s21 phonecase">
                 <h4 class="card-title">Samsung S21</h4>
                 <p class="card-text">Price: $2.00</p>
-                <a href="#" data-name="s21" data-price="2.0" class="add-to-cart cart-btn">Add to cart</a>
+                <div class ="addcart">
+                    <a href="#" data-name="s21" data-price="2.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                </div>
             </div>
         </div> 
 
 <!-- example -->
-
+<nav class="navbar navbar-inverse bg-inverse fixed-top bg-faded">
+    <div class="row">
+        <div class="col">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Cart (<span class="total-count"></span>)</button>
+          <button class="clear-cart btn btn-danger">Clear Cart</button></div>
+    </div>
+</nav>
  <!-- Modal -->
  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">

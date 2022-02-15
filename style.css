@@ -326,11 +326,12 @@ a.active,a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .faq-header{
     padding:60px;
+    text-align: center;
     color: #f4f4f4;
     text-shadow: 2px 2px 4px gray;
     font-size: 80px;
@@ -338,7 +339,8 @@ a.active,a:hover{
 
   .faq-textbox{
     margin-left:50px;
-    
+    display: flex;
+    flex-direction: column;
   }
 
   .faq-text{
@@ -353,5 +355,23 @@ a.active,a:hover{
     background-color: #f4f4f4;
     margin: 20px;
   }
+  .faq-text:hover {
+    opacity: 1;
+    background-color:#e4e1e1;
+  }
 
+  .faq-text .answer {
+    display: none;
+  }
+  
+  .faq-text:hover .questions {
+    display: none;
 
+  }
+  
+  .faq-text:hover .answer {
+    display: inline;
+    color:#717171;
+    font-size: 20px;
+    text-align: center;
+  }
