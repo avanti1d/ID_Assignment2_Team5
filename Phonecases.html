@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhoneCases</title>
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="style2.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 </head>
 
@@ -14,15 +14,13 @@
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
         </label>
         <label class="logo">Electron</label>
         <ul>
-            <li><a href="#">
-                <img class="" src="Images/Shoppingcart.png" alt="Shoppingcart"
-                width="35px"
-                height="35px"> 
-            </a></li>
+            <li><input type="image" src="Images/Shoppingcart.png" width="35px" height="35px" name="shopcart" 
+                class="cart-btn" id="cartimg" data-toggle="modal" data-target="#cart"><span class="total-count"></span>
+            </li>
             <li><a class="#" href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Index.html">Home</a></li>
             <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Services.html">Services</a></li>
             <li><a href="#">Games</a></li>
@@ -32,34 +30,50 @@
 
     <!-- ITEMS -->
     <div class="caseitems-grid" id="list-items">
-        <div class="product-here">
-            <a href="#">
-            <img class="" src="Images/PhoneCase.png" alt="#">
-            <div class="catetext">#</div>
-            </a>
-        </div>
+        <div class="product-here"> 
+            <div class="card">       
+                <img class="" src="Images/PhoneCase.png" alt="iphone phonecase">
+                <h4 class="card-title">Iphone 13</h4>
+                <p class="card-text">Price: $2.00</p>
+                <a href="#" data-name="iphone13" data-price="2.0" class="add-to-cart cart-btn">Add to cart</a>
+            </div>
+        </div> 
         
-        <div class="product-here">
-            <a href="#">
-            <img class="" src="Images/s21 case.png" alt="#">
-            <div class="catetext">#</div>
-            </a>
-        </div>
+        <div class="product-here"> 
+            <div class="card">       
+                <img class="" src="Images/s21 case.png" alt="s21 phonecase">
+                <h4 class="card-title">Samsung S21</h4>
+                <p class="card-text">Price: $2.00</p>
+                <a href="#" data-name="s21" data-price="2.0" class="add-to-cart cart-btn">Add to cart</a>
+            </div>
+        </div> 
 
-        <div class="product-here">
-            <a href="#">
-            <img class="" src="#" alt="#">
-            <div class="catetext">#</div>
-            </a>
-        </div>
+<!-- example -->
 
-        <div class="product-here">
-            <a href="#">
-            <img class="" src="#" alt="#">
-            <div class="catetext">#</div>
-            </a>
+ <!-- Modal -->
+ <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+            
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Order now</button>
+        </div>
+      </div>
     </div>
+  </div> 
+  
 
         <!-- Footer -->
     <div class="footer">
