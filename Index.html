@@ -7,6 +7,8 @@
     <title>Electron</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -18,11 +20,12 @@
         </label>
         <label class="logo">Electron</label>
         <ul>
-            <li><a href="#">
-                <img class="" src="Images/Shoppingcart.png" alt="Shoppingcart"
-                 width="35px"
-                 height="35px"> 
-            </a></li>
+            <li>
+                <button type="button" class="cartbtn" data-toggle="modal" data-target="#cart">
+                    <img class="" src="Images/Shoppingcart.png" width="35px" height="35px">
+                    <span class="total-count"></span>
+                </button>
+            </li>
             <li><a class="active" href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Index.html">Home</a></li>
             <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Services.html">Services</a></li>
             <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Games.html">Games</a></li>
@@ -61,14 +64,6 @@
         <span class="dot"></span> 
         <span class="dot"></span> 
         <span class="dot"></span> 
-    </div>
-
-    <!-- Categories -->
-    <div class="categories" id="items-categories">
-        <li><a class="active" href="#">Electronics</a></li>
-        <li><a href="#">Home & Living</a></li>
-        <li><a href="#">Bags</a></li>
-        <li><a href="#">Sports & OutDoor</a></li>
     </div>
 
     <!-- Sub-Categories -->
@@ -129,6 +124,29 @@
             </a>
         </div>
     </div>
+ <!-- Modal -->
+ <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+            
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Order now</button>
+        </div>
+      </div>
+    </div>
+  </div> 
 
     <!-- Footer -->
     <div class="footer">
