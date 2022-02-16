@@ -5,12 +5,9 @@
 	<meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PhoneCases</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
     <link href="style2.css" rel="stylesheet" type="text/css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-
-
 </head>
 
 <body>
@@ -28,10 +25,10 @@
                     <span class="total-count"></span>
                 </button>
             </li>
-            <li><a class="#" href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Index.html">Home</a></li>
+            <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Index.html">Home</a></li>
             <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Services.html">Services</a></li>
             <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Games.html">Games</a></li>
-            <li><a href="#">Sign In</a></li>
+            <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/SignIn.html">Sign In</a></li>
         </ul>
     </nav>
 
@@ -43,7 +40,7 @@
                 <h4 class="card-name">Iphone 13</h4>
                 <p class="card-price">$2.00</p>
                 <div class ="addcart" >
-                    <button class="add-to-cart" data-name="iphone13" data-price="2.0" >Add to cart</a>
+                    <button class="add-to-cart" data-name="iphone13" data-price="2.0" onclick="Item()">Add to cart</button>
                 </div>
             </div>
         </div> 
@@ -54,7 +51,7 @@
                 <h4 class="card-name">Samsung S21</h4>
                 <p class="card-price">$2.00</p>
                 <div class ="addcart">
-                    <a href="#" data-name="s21" data-price="2.0" class="add-to-cart btn btn-primary">Add to cart</a>
+                    <a href="#" data-name="s21" data-price="2.0" class="add-to-cart">Add to cart</a>
                 </div>
             </div>
         </div> 
@@ -104,7 +101,7 @@
         </div>
         <div class="modal-body">
           <table class="show-cart table">
-            
+            <!-- Products added to the cart will be added here using javascript-->
           </table>
           <div>Total price: $<span class="total-cart"></span></div>
         </div>
@@ -123,7 +120,9 @@
         2022 Janaury 31</h4>
     </div>
 
-    <script src="script.js"></script> 
+    <script src="script.js" ></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>

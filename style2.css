@@ -1,54 +1,5 @@
 /* Nav bar */
 
-*{
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-  }
-  body{
-    font-family: "MaisonNeueBook","Avenir Next","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: white;
-  }
-  nav{
-    background: #f4f4f4;
-    height: 80px;
-    width: 100%;
-  }
-  label.logo{
-    color: black;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-    
-  }
-  nav ul{
-    float: right;
-    margin-right: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-
-  }
-
-
-  nav ul li a{
-    color: black;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-    
-  }
-  a.active,a:hover{
-    background: none;
-    color: Gray;
-    transition: .5s;
-  }
   .checkbtn{
     font-size: 30px;
     color: black;
@@ -131,7 +82,7 @@
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 1000; /* Sit on top */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -150,7 +101,7 @@
     width: 70%; /* Modal size*/
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
   }
     /* Add Animation */
     @keyframes animatetop {
@@ -164,6 +115,8 @@
     float: right;
     font-size: 20px;
     font-weight: bold;
+    background-color: white;
+    border:none;
   }
   
   .close:hover,
@@ -171,6 +124,7 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+    border: none;
   }
 
 
@@ -180,6 +134,7 @@
     background-color: white;
     color: black;
     font-size: 30px;
+    margin:5px;
   }
   
   /* Modal Body */
@@ -187,7 +142,8 @@
   
   /* Modal Footer */
   .modal-footer {
-    padding: 2px 16px;
+    margin:5px;
+    padding: 2px 20px;
     background-color: white;
     color: black;
     font-size: 20px;
@@ -242,18 +198,3 @@
     display:none;
 }
 
-
-/* Footer */
-.footer {
-    width:100%;
-    bottom: 0;
-    margin-top: 200px;
-    background-color: white;
-    color: rgb(59, 56, 56);
-    height:150px;
-    font-size: 10px;
-
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    }
