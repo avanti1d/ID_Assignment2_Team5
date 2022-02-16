@@ -112,6 +112,20 @@
   .cartbtn{
       border: none;  
   }
+  .addcart .btn{
+      border: 2px white;
+      font-size: 15px;
+      background-color:darkgrey;
+      padding: 7px;
+      color: white;
+      display:inline-block;
+  }
+
+  .addcart:hover .btn{
+      border: 2px white;
+      font-size: 15px;
+      background-color:lightgrey;  
+  }
 
 /* The Modal (background) */
 .modal {
@@ -221,10 +235,10 @@
     display:block;
     text-align: center;
 }
-.product-here:hover .card-title{
+.product-here:hover .card-name{
     display:none;
 }
-.product-here:hover .card-text{
+.product-here:hover .card-price{
     display:none;
 }
 
