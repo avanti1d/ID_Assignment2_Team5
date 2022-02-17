@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor & TV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="style2.css" rel="stylesheet" type="text/css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Electron</label>
+        <ul>
+            <li>
+                <button type="button" class="cartbtn" data-toggle="modal" data-target="#cart">
+                    <img class="" src="Images/Shoppingcart.png" width="35px" height="35px">
+                    <span class="total-count"></span>
+                </button>
+            </li>
+            <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Index.html">Home</a></li>
+            <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Services.html">Services</a></li>
+            <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Games.html">Games</a></li>
+            <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/SignIn.html">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <!-- ITEMS -->
+    <div class="caseitems-grid" id="list-item">
+        <div class="product-here"> 
+            <div class="card">       
+                <img class="" src="Images/Monitor.png" alt="curvemonitor">
+                <h5 class="card-name">Curve Monitor</h5>
+                <p class="card-price">$559.99</p>
+                <div class ="addcart" >
+                    <a href="#" data-name="Curve&nbsp;Monitor" data-price="559.99" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="product-here"> 
+            <div class="card">       
+                <img class="" src="Images/flatmonitor.png" alt="flatmonitor">
+                <h5 class="card-name">Flat Monitor</h5>
+                <p class="card-price">$399.00</p>
+                <div class ="addcart">
+                    <a href="#" data-name="Flat&nbsp;Monitor" data-price="399.00" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div> 
+
+        <div class="product-here"> 
+            <div class="card">       
+                <img class="" src="Images/50inchtv.png" alt="50inchtv">
+                <h5 class="card-name">50 Inch Smart TV</h5>
+                <p class="card-price">$1499.00</p>
+                <div class ="addcart">
+                    <a href="#" data-name="32&nbsp;Inch&nbsp;TV" data-price="1499.00" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div> 
+
+        
+        <div class="product-here"> 
+            <div class="card">       
+                <img class="" src="Images/verticalmonitor.png" alt="verticalmonitor">
+                <h5 class="card-name">Vertical Rotatable Monitor</h5>
+                <p class="card-price">$589.99</p>
+                <div class ="addcart">
+                    <a href="#" data-name="Vertical&nbsp;Monitor" data-price="589.99" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div> 
+
+
+ <!-- Modal -->
+ <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <table class="show-cart table">
+            <!-- Products added to the cart will be added here using javascript-->
+          </table>
+          <div>Total price: $<span class="total-cart"></span></div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="clearallbtn">Clear All</button>
+          <button type="button" class="orderbtn" data-dismiss="modal" >Order now</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+
+        <!-- Footer -->
+    <div class="footer">
+        <h4>Avanti & Hwee Min<br><br><br>
+        2022 Janaury 31</h4>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
