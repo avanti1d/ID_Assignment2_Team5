@@ -1,5 +1,8 @@
 # ID Assignment 2
 #### Lee Hwee Min(S10223008G) and Avanti Deveriya(S10223840E)
+### Website Link:
+### file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Index.html
+
 
 ## Electron
 #### Our Website is an ecommerce website, selling elctronic goods.
@@ -40,16 +43,15 @@
 ##### When product is being added to the cart, beside the cart it shows the number of item in it.
 ##### Total Price of the cart should be calculated correctly.
 ##### Items in the cart should be saved as user click on other pages.
-
-#### 2. Discount from game
-##### When user win a game, it should receive a certain discount amount.
-##### When user open their cart, the discount should be implemented in the cart.
-
-
+#### 2. Sign In
+##### Empty form, there will be a popout asking to fill in the form
+##### The remember box, will remember the previous inputs if they are ticked.
 
 ## Credits
 #### Usage of W3Schools for research of codes and immplementing them on the website
 #### Images are searched on google
-
-
-### file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Index.html
+#### Inspiration for the design of the website is from pinterest
+#### Usage of CodePen for research of codes and immplementing them on the website
+###### https://codepen.io/lvzhenbo/pen/yLLWoeW
+#### Usage of youtube for research of codes and immplementing them on the website
+###### https://www.youtube.com/watch?v=ifJLNsG57hQ

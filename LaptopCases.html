@@ -4,10 +4,10 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Electron</title>
+    <title>PhoneCases</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <link href="style2.css" rel="stylesheet" type="text/css"/>
     <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="style2.css" rel="stylesheet" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -17,7 +17,7 @@
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
+            <i class="fas fa-bars"></i>
         </label>
         <label class="logo">Electron</label>
         <ul>
@@ -27,14 +27,69 @@
                     <span class="total-count"></span>
                 </button>
             </li>
-            <li><a class="active" href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Index.html">Home</a></li>
+            <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Index.html">Home</a></li>
             <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Services.html">Services</a></li>
             <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/Games.html">Games</a></li>
             <li><a href="file:///C:/Users/lhmle/OneDrive/Desktop/ID%20ASG2/SignIn.html">Sign In</a></li>
         </ul>
     </nav>
 
- 
+    <!-- ITEMS -->
+    <div class="caseitems-grid" id="list-item">
+        <div class="product-here"> 
+            <div class="card">       
+                <img class="" src="Images/Laptopbag.png" alt="LaptopBag">
+                <h4 class="card-name">Laptop Bag</h4>
+                <p class="card-price">$9.80</p>
+                <div class ="addcart" >
+                    <a href="#" data-name="Laptop&nbsp;Bag" data-price="9.80" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div> 
+        
+        <div class="product-here"> 
+            <div class="card">       
+                <img class="" src="Images/Laptopbaghandle.png" alt="LaptopBagHandle">
+                <h4 class="card-name">Laptop Bag With Handle</h4>
+                <p class="card-price">$10.20</p>
+                <div class ="addcart">
+                    <a href="#" data-name="Laptop&nbsp;Bag&nbsp;With&nbsp;Handle" data-price="10.20" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div> 
+
+        <div class="product-here"> 
+            <div class="card">       
+                <img class="" src="Images/LeatherLaptopSleeve.png" alt="LeatherLaptopBag">
+                <h4 class="card-name">Leather Laptop Bag</h4>
+                <p class="card-price">$11.00</p>
+                <div class ="addcart">
+                    <a href="#" data-name="Leather&nbsp;Laptop&nbsp;Bag" data-price="11.00" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div> 
+
+        <div class="product-here"> 
+            <div class="card">       
+                <img class="" src="Images/BackpackChargingport.png" alt="BackpackCharger">
+                <h4 class="card-name">BackPack With Charger</h4>
+                <p class="card-price">$24.99</p>
+                <div class ="addcart">
+                    <a href="#" data-name="Backpack&nbsp;With&nbsp;Charger" data-price="24.99" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div> 
+
+        <div class="product-here"> 
+            <div class="card">       
+                <img class="" src="Images/SlingLaptopBag.png" alt="SlingBag">
+                <p class="card-price">$14.99</p>
+                <div class ="addcart">
+                    <a href="#" data-name="Sling&nbsp;Laptop&nbsp;Bag" data-price="14.99" class="add-to-cart">Add to cart</a>
+                </div>
+            </div>
+        </div> 
+
  <!-- Modal -->
  <div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -52,20 +107,21 @@
           <div>Total price: $<span class="total-cart"></span></div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Order now</button>
+            <button type="button" class="clearallbtn">Clear All</button>
+          <button type="button" class="orderbtn" data-dismiss="modal" >Order now</button>
         </div>
       </div>
     </div>
   </div> 
 
-    <!-- Footer -->
+
+
+        <!-- Footer -->
     <div class="footer">
         <h4>Avanti & Hwee Min<br><br><br>
         2022 Janaury 31</h4>
     </div>
 
-     
     <script src="script.js"></script>
 </body>
 

@@ -86,8 +86,8 @@
                             console.log("collision detected");
                             score++;
                             if(score == brickRowCount*brickColumnCount) {
-                                alert("You win one game! You have earned 10 cents!");
-                                money = money + 0.10
+                                alert("You win one game! You have earned 5 cents!");
+                                money = money + 0.05
     
                                 document.location.reload();
                             }
