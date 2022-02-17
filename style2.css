@@ -128,10 +128,13 @@
   }
 
   .btn-secondary{
-    background-color: red;
+    background-color:crimson;
     border:none;
     padding: 3px;
-    
+  }
+
+  .btn-secondary:hover {
+      opacity: 0.8;
   }
 
 /* Modal Header */

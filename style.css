@@ -445,3 +445,13 @@ span.psw {
      border:none;
   }
 }
+
+
+/* Game */
+canvas { 
+  background: #eee; 
+  display: block; 
+  justify-content: center;
+  margin:50px auto;
+
+}
