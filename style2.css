@@ -129,6 +129,9 @@
 
   .btn-secondary{
     background-color: red;
+    border:none;
+    padding: 3px;
+    
   }
 
 /* Modal Header */
