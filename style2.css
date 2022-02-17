@@ -127,6 +127,9 @@
     border: none;
   }
 
+  .btn-secondary{
+    background-color: red;
+  }
 
 /* Modal Header */
 .modal-header {
