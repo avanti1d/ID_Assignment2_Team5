@@ -74,6 +74,8 @@
                 paddleX = relativeX - paddleWidth/2;
             }
         }
+
+
         function collisionDetection() {
             for(var c=0; c<brickColumnCount; c++) {
                 for(var r=0; r<brickRowCount; r++) {
@@ -87,8 +89,11 @@
                             score++;
                             if(score == brickRowCount*brickColumnCount) {
                                 alert("You win one game! You have earned 5 cents!");
-                                money = money + 0.05
-    
+                                discount = function(){
+                                    money = money + 0.05
+                                    return money;                                   
+                                }
+                            
                                 document.location.reload();
                             }
                         }
