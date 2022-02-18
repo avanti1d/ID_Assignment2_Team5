@@ -2,6 +2,8 @@
 #### Lee Hwee Min(S10223008G) and Avanti Deveriya(S10223840E)
 ### Website Link:
 #### https://hweeminn.github.io/ID_Assignment2_Team5/index.html
+### Video Link:
+#### https://drive.google.com/file/d/1rzG1aidtn75NHs23Wrtp2gVuYNC-d8oe/view?usp=sharing
 
 
 ## Electron
@@ -55,3 +57,16 @@
 ###### https://codepen.io/lvzhenbo/pen/yLLWoeW
 #### Usage of youtube for research of codes and immplementing them on the website
 ###### https://www.youtube.com/watch?v=ifJLNsG57hQ
+
+#### Contribution
+##### Lee Hwee Min
+###### 1. Design and Inspiration of the website
+###### 2. Add to Cart (API)
+###### 3. Slideshow (Javascript)
+###### 4. Finding the images for each item
+
+##### Avanti Deveriya
+###### 1. Design and Inspiration of the website
+###### 2. Canvas Game (Javascript)
+###### 3. Navigation Bar
+###### 4. Finding the images for each item
