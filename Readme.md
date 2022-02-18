@@ -1,7 +1,7 @@
 # ID Assignment 2
 #### Lee Hwee Min(S10223008G) and Avanti Deveriya(S10223840E)
 ### Website Link:
-#### https://hweeminn.github.io/ID_Assignment2_Team5/
+#### https://hweeminn.github.io/ID_Assignment2_Team5/index.html
 
 
 ## Electron
